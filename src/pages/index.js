@@ -1,21 +1,40 @@
-import React from "react"
-import { Link } from "gatsby"
 
+// import { Link } from "gatsby"
+import React, { Component } from "react";
 import Layout from "../components/layout"
-import Image from "../components/image"
+// import Image from "../components/image"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
 
+import Photos from "../components/photos";
+import Jumbotron from "../components/jumbotron";
+import items from "../components/items";
+
+class IndexPage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      items: items,
+      selectItem: items[0],  
+    }
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(item) {
+    this.setState({ selectItem: item });
+  }
+
+  render() {
+    return (
+      <Layout>
+        <SEO title="Home" />
+        <Jumbotron item={this.state.selectItem} items={this.state.items} handleClick={this.handleClick}/>
+        <Photos item={this.state.selectItem} />
+        {/* <FooterComp></FooterComp> */}
+        {/* <MailIcon></MailIcon> */}
+      </Layout>
+      
+    );
+  }
+}
 export default IndexPage
