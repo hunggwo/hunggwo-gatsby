@@ -1,30 +1,31 @@
 import React, { Component } from 'react';
 import logo from './hunggwo-logo-only.svg';
+import facebook from './facebook.svg';
+
 
 class Jumbotron extends Component {
   render() {
     const categories = this.props.items.map((item, index) => {
       return (
-        <li className="nav-item" onClick={() => this.props.handleClick(item)} key={index}>
-          <span className={'nav-link ' + (this.props.item.name === item.name ? 'active' : '') }>{item.name}</span>
-        </li>
+        <div className="col-4" 
+          style={{
+            height: `150px`,
+          }}
+          onClick={() => this.props.handleClick(item)} key={index}>
+          <span className={'nav-link ' + (this.props.item.name === item.name ? 'active' : '')}>{item.name}</span>
+          <img src={`/photos/${item.name}/1.jpg`} style={{
+           height: `90%`,
+          }} />
+        </div>
       )
     })
 
     return (
-      <div className="jumbotron">
-        <div className="jumbotron-header">
-          <img className="img-fluid" src={logo}/>
-          <div className="" >
-            <h1>弘國廣告</h1>
-            <h4>台中市西區忠明路59號</h4>
-            <h4>04-23145649</h4>
-            <a href="mailto:hunggwo@seed.net.tw">hunggwo@seed.net.tw</a>
-          </div>
-        </div>
-        
+      <div className="">
+       
+          <img src={facebook} />
         <hr></hr>
-        <ul className="nav nav-pills nav-fill justify-content-center">{categories}</ul>
+        <div className="row">{categories}</div>
       </div>
     )
   }

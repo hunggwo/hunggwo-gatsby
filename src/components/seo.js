@@ -28,6 +28,7 @@ function SEO({ description, lang, meta, title }) {
   const metaDescription = description || site.siteMetadata.description
 
   return (
+    <div>
     <Helmet
       htmlAttributes={{
         lang,
@@ -69,6 +70,11 @@ function SEO({ description, lang, meta, title }) {
         },
       ].concat(meta)}
     />
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous"></link>
+    </div>
   )
 }
 

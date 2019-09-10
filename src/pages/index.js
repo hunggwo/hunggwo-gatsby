@@ -29,9 +29,7 @@ class IndexPage extends Component {
       <Layout>
         <SEO title="Home" />
         <Jumbotron item={this.state.selectItem} items={this.state.items} handleClick={this.handleClick}/>
-        <Photos item={this.state.selectItem} />
-        {/* <FooterComp></FooterComp> */}
-        {/* <MailIcon></MailIcon> */}
+        {/* <Photos item={this.state.selectItem} /> */}
       </Layout>
       
     );
