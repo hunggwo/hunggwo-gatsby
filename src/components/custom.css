@@ -1,0 +1,20 @@
+.one-item {
+  height: 250px;
+  display: inline-block;
+  /* width: calc(100%/3); */
+  width: 100%;
+}
+
+.one-item img {
+  height: calc(100% - 45px);
+  margin: 0;
+}
+
+.one-item  .one-item-name {
+  width: 100%;
+  background-color: rgba(0,0,0,0.3);
+  text-align: center;
+  padding: 5px;
+  color: white;
+}
+

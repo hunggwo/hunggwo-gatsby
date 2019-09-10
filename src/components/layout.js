@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import "./custom.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -35,12 +36,29 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        {/* <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer> */}
       </div>
+      <footer style={{
+
+          backgroundColor: `lightslategrey`,
+          padding: `1rem 1rem 1.45rem 1rem`,
+        }}>
+          <div
+            style={{
+              margin: `0 auto`,
+              maxWidth: 960,
+              padding: `0px 1.0875rem 1.45rem`,
+              paddingTop: 0,
+              display: `flex`,
+              justifyContent: `space-between`,
+              color: `white`,
+            }}
+          >
+            <span>電話：04-23145649</span>
+            <span>信箱：hunggwo@seed.net.tw</span>
+            <span>地址：<a style={{ color: `white`}} href="https://goo.gl/maps/ocQCtCFU1pVnhvF4A">台中市西區忠明路59號</a>, 403</span>
+          </div>
+          
+        </footer>
     </>
   )
 }

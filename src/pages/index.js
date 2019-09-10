@@ -28,6 +28,9 @@ class IndexPage extends Component {
     return (
       <Layout>
         <SEO title="Home" />
+        <p style={{ textAlign: `center`}}>二十年在地經營，與各大企業合作豐富，提供最好品質、最直得信賴的廣告夥伴</p>
+        <p style={{ textAlign: `center`}}><small>我們提供多項服務，客製化產品，請點擊照片觀看更多實既案例</small></p>
+        <hr></hr>
         <Jumbotron item={this.state.selectItem} items={this.state.items} handleClick={this.handleClick}/>
         {/* <Photos item={this.state.selectItem} /> */}
       </Layout>
