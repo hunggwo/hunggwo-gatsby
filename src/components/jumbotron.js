@@ -6,7 +6,7 @@ class Jumbotron extends Component {
   render() {
     const categories = this.props.items.map((item, index) => {
       return (
-        <a href="#" class="col-md-4 col-sm-6" style={{ padding: 0}}>
+        <a href={item.name} class="col-md-4 col-sm-6" style={{ padding: 0}}>
           <div class="one-item" style={{
             backgroundImage: `url(/photos/${item.name}/1.jpg)`,
             backgroundPosition: `center`,

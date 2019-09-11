@@ -48,7 +48,7 @@ const items = [
     photoCount: 13,
   },
   {
-    name: '隔熱紙及防爆模施作',
+    name: '隔熱紙及防爆膜施作',
     photoCount: 4,
   },
   {

@@ -56,15 +56,6 @@ const Header = ({ siteTitle }) => (
           margin: `0 2%`,
         }}>關於弘國</Link>
 
-        <Link to="/product"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-            backgroundColor: `rgba(0,0,0,0.3)`,
-            padding: `10px 15px`,
-            margin: `0 2%`,
-          }}
-        >實際案例</Link>
 
         <a href="https://www.facebook.com/弘國廣告-107647353951765/" 
           style={{

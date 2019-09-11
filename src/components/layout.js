@@ -53,9 +53,9 @@ const Layout = ({ children }) => {
               color: `white`,
             }}
           >
-            <span>電話：04-23145649</span>
-            <span>信箱：hunggwo@seed.net.tw</span>
-            <span>地址：<a style={{ color: `white`}} href="https://goo.gl/maps/ocQCtCFU1pVnhvF4A">台中市西區忠明路59號</a>, 403</span>
+            <span>電話：<a style={{ color: `white`}} href="tel:+886423145649">04-23145649</a></span>
+            <span>信箱：<a style={{ color: `white`}} href="mailto:hunggwo@seed.net.tw">hunggwo@seed.net.tw</a></span>
+            <span>地址：<a style={{ color: `white`}} href="https://goo.gl/maps/ocQCtCFU1pVnhvF4A">台中市西區忠明路59號</a></span>
           </div>
           
         </footer>
