@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `弘國廣告`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `台中弘國廣告公司 各式室內室外廣告製作 壓克力製品 活動展架 立體字 精美公佈欄 大圖輸出 廣告帆布 室內外精緻招牌 車體廣告 電腦割字`,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -25,7 +25,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/best-price.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

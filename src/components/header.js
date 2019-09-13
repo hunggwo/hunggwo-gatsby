@@ -47,6 +47,7 @@ const Header = ({ siteTitle }) => (
           textAlign: `center`,
         }}
       >
+  
         <Link to="/about" style={{
           color: `white`,
           textDecoration: `none`,

@@ -48,14 +48,20 @@ const Layout = ({ children }) => {
               maxWidth: 960,
               padding: `0px 1.0875rem 1.45rem`,
               paddingTop: 0,
-              display: `flex`,
-              justifyContent: `space-between`,
-              color: `white`,
+              color: `white`
             }}
+
+            class="row"
           >
-            <span>電話：<a style={{ color: `white`}} href="tel:+886423145649">04-23145649</a></span>
-            <span>信箱：<a style={{ color: `white`}} href="mailto:hunggwo@seed.net.tw">hunggwo@seed.net.tw</a></span>
-            <span>地址：<a style={{ color: `white`}} href="https://goo.gl/maps/ocQCtCFU1pVnhvF4A">台中市西區忠明路59號</a></span>
+            <div class="col-12 col-sm-12 col-md-4" style={{ textAlign: `center `}}>
+              <span>電話：<a style={{ color: `white`}} href="tel:+886423145649">04-23145649</a></span>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4" style={{ textAlign: `center `}}>
+              <span>信箱：<a style={{ color: `white`}} href="mailto:hunggwo@seed.net.tw">hunggwo@seed.net.tw</a></span>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4" style={{ textAlign: `center `}}>
+              <span>地址：<a style={{ color: `white`}} href="https://goo.gl/maps/ocQCtCFU1pVnhvF4A">台中市西區忠明路59號</a></span>
+            </div>
           </div>
           
         </footer>

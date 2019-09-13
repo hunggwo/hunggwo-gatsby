@@ -10,16 +10,22 @@ const SecondPage = ({data}) => {
 
   return (
     <Layout>
-      <SEO title="Page two" />
+      <SEO title={`弘國廣告 - node.frontmatter.title`} />
       <Link to="/">⃪ 回首頁</Link>
       <hr></hr>
       <div>
-        <h3>{node.frontmatter.title}</h3>
-        <h5>{node.frontmatter.desc}</h5>
+        <div style={{
+          padding: `0 7px`
+        }}>
+          <h3>{node.frontmatter.title}</h3>
+          <p>{node.frontmatter.desc}</p>
+          <p><small>(點擊圖片可放大檢視)</small></p>
+        </div>
+       
         <div className={`row`}>
           {[...Array(node.frontmatter.imgcount).keys()].map((i) => (
-            <a class="col-md-4 col-sm-6" data-title="">
-              <img class="shadow p-1 m-1 bg-white rounded" src={`/photos/${node.frontmatter.title}/${i+1}.jpg`} />
+            <a class="col-md-4 col-sm-6" data-lightbox={`image-${i+1}`} href={`/photos/${node.frontmatter.title}/${i+1}.jpg`}>
+              <img alt={`node.frontmatter.title-${i+1}.jpg`} class="shadow p-1 m-1 bg-white rounded" src={`/photos/${node.frontmatter.title}/${i+1}.jpg`} />
             </a>
           ))}
         </div>
