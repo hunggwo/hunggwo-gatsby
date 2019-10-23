@@ -1,4 +1,4 @@
-import { Link, withAssetPrefix } from "gatsby"
+import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import logo from "./hunggwo-logo-only.svg"
@@ -8,7 +8,13 @@ import facebook from './facebook.svg';
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `lightslategrey`,
+      // background: `lightslategrey`,
+      backgroundImage: `url("/photos/IMG_6051.JPG")`,
+      backgroundRepeat: `no-repeat`,
+      backgroundPosition: `center`,
+      backgroundSize: `cover`,
+      backgroundColor: `rgba(255,255,255,0.3)`,
+      backgroundBlendMode: `overlay`,
       marginBottom: `1.45rem`,
     }}
   >
@@ -30,7 +36,7 @@ const Header = ({ siteTitle }) => (
           <Link
             to="/"
             style={{
-              color: `white`,
+              color: `black`,
               textDecoration: `none`,
             }}
           >
@@ -38,7 +44,14 @@ const Header = ({ siteTitle }) => (
           </Link>
           
         </h1>
+        <p style={{ 
+          textAlign: `center`,
+          background: `rgba(255,222,0,1)`,
+          borderRadius: `10px`,
+          padding: `2px 6px`,
+        }}>二十年在地經營，與各大企業合作豐富，提供最好品質、最值得信賴的廣告夥伴</p>
       </div>
+
 
 
       <div
@@ -73,6 +86,8 @@ const Header = ({ siteTitle }) => (
             <span>幫我們按讚！</span>  
         </a>
 
+
+            
         
          
       </div>

@@ -77,18 +77,7 @@ function SEO({ description, lang, meta, title }) {
       <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.min.js"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-75506898-6">
-      </script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-75506898-6');
-      </script>
-
+      <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400&display=swap" rel="stylesheet"></link>
 
     </Helmet>
     </div>

@@ -38,7 +38,7 @@ class Photo extends Component {
     return (
       
       <a href={this.props.src} data-lightbox={this.props.src} data-title="">
-        <img src={this.props.src} class="item item-image shadow p-1 m-1 bg-white rounded"></img>
+        <img src={this.props.src} class="item item-image shadow p-1 m-1 bg-white rounded" alt="prodict-img"></img>
       </a>
     )
   }
