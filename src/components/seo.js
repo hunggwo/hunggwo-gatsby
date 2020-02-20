@@ -77,7 +77,7 @@ function SEO({ description, lang, meta, title }) {
       <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.min.js"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-      <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400&display=swap" rel="stylesheet"></link>
+      <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet"></link>
 
     </Helmet>
     </div>
